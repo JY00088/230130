@@ -1,0 +1,691 @@
+@import "./reset.css";
+@import "./inc.css";
+
+.boxsvg {
+    transform: translateY(0px);
+    transition: 1s;
+    opacity: 1;
+    //border: 3px solid red;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+
+    .boxsvgup {
+
+        top: 100px;
+        left: 0;
+        //z-index: 99;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        //border: 3px solid blue;
+
+        .upbox {
+
+            //z-index: 99;
+            width: 100%;
+
+
+            .introsvg {
+                //text-align: center;
+                padding-top: 45px;
+
+                .svg1 {
+                    width: 100%;
+                    height: 800px;
+                    background-color: rgb(204, 204, 204);
+                    // animation: svgg 3s infinite steps(1, start);
+                    // animation-name: svgg;
+                    // animation-duration: 4s;
+                    // animation-iteration-count: infinite;
+                    // animation-timing-function: steps(2, start);
+                    animation: svgg 4s infinite linear;
+                    clip-path: polygon(24% 13%, 77% 2%, 100% 60%, 77% 74%, 65% 100%, 37% 80%, 3% 76%);
+                }
+
+                @keyframes svgg {
+                    0% {
+                        background-color: #00ce5f;
+                        clip-path: polygon(24% 13%, 77% 2%, 100% 60%, 77% 74%, 65% 100%, 37% 80%, 3% 76%, 16% 14%);
+                    }
+
+                    25% {
+                        background-color: #308aff;
+                        clip-path: polygon(50% 21%, 68% 0, 98% 21%, 93% 82%, 55% 68%, 34% 98%, 3% 59%, 16% 14%);
+                    }
+
+                    50% {
+                        background-color: #cccccc;
+                        clip-path: polygon(61% 3%, 97% 25%, 90% 72%, 56% 96%, 29% 90%, 26% 68%, 3% 54%, 12% 22%);
+                    }
+
+                    75% {
+                        background-color: #308aff;
+                        clip-path: polygon(50% 21%, 68% 0, 98% 21%, 93% 82%, 55% 68%, 34% 98%, 3% 59%, 16% 14%);
+                    }
+
+                    100% {
+                        background-color: #00ce5f;
+                        clip-path: polygon(24% 13%, 77% 2%, 100% 60%, 77% 74%, 65% 100%, 37% 80%, 3% 76%, 16% 14%);
+                    }
+                }
+            }
+
+            p {
+
+                font-family: 'mang3', 'Noto Sans KR', sans-serif;
+                font-size: 250px;
+                font-weight: 500;
+                width: 100%;
+                padding: 0 2%;
+                word-spacing: -0.2em;
+                line-height: 0.9;
+            }
+
+            .introtext01 {
+                top: 0.2em;
+                position: absolute;
+            }
+
+            .introtext02 {
+                bottom: 0;
+                text-align: right;
+                position: absolute;
+            }
+
+            .introtextmobile {
+                display: none;
+                position: absolute;
+            }
+        }
+
+    }
+
+    .svgOn {}
+
+
+}
+
+.boxsvg:hover {
+    cursor: url(../img/cursor.svg) 15 15, progress;
+}
+
+
+main {
+    display: none;
+
+    .First {
+        width: 100%;
+        padding: 40px 0 !important;
+        border-bottom: 1px solid;
+        overflow-x: hidden;
+
+        .angular {
+            width: 100%;
+
+            .angularbox {
+                max-width: 100%;
+                height: 800px;
+                object-fit: cover;
+                background-image: url(../img/01.jpg);
+                clip-path: polygon(12% 27%, 68% 15%, 92% 34%, 87% 71%, 39% 89%, 7% 65%);
+                overflow: hidden;
+
+                img {
+                    text-align: center;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .angulartext {
+            padding-bottom: 0;
+
+            .angularup {
+                text-align: center;
+
+                .house {
+                    font-size: calc(1.3vw + 12px);
+                    line-height: 1.5;
+                    padding: 50px 20px;
+                    max-width: 750px;
+                    margin: 0 auto;
+                    font-weight: 700;
+                    font-family: '112', 'Noto Sans KR', sans-serif;
+
+                    p {}
+                }
+
+                .more {
+                    border-width: 0px !important;
+                    font-size: 22px;
+                    font-weight: 600 !important;
+                    padding-right: 2em;
+                    padding-left: 0.7em;
+                    font-family: 'mang3';
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+
+                        p {}
+                    }
+                }
+            }
+        }
+    }
+
+    .Second {
+        width: 100%;
+        padding: 40px 0 !important;
+        border-bottom: 1px solid;
+        overflow-x: hidden;
+
+        .Secondup {
+            padding: 0 0 0 60px !important;
+            margin-right: 0 !important;
+
+            .Secondupbox {
+                position: relative;
+                width: 25%;
+                padding: 0 10px;
+
+                .title2 {
+                    font-family: 'mang4', 'Noto Sans KR', sans-serif;
+                    font-size: 25px;
+                    font-weight: 900;
+                    width: 100%;
+
+                }
+
+                p {
+                    text-align: left;
+                    margin-top: 30px;
+                    padding-bottom: 40px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                }
+            }
+
+            .List2 {
+                .swiper-pagination {
+                    display: flex;
+                    flex-direction: column;
+                    bottom: unset !important;
+                    padding: 0 30px 0 10px;
+                    //position: absolute;
+                    width: 20%;
+
+                    button {
+
+                        font-family: 'mang2', 'Noto Sans KR', sans-serif;
+                        font-size: 25px;
+                        font-weight: 600;
+                        background-color: transparent;
+                        border: none;
+                        border-top: 1px solid black;
+                        padding: 9px 0px 8px 6px;
+                    }
+
+                    /* .up {
+                        background-color: black;
+                        color: white;
+                    } */
+                }
+
+                /* .up {
+                    background-color: black;
+                    color: white;
+                } */
+            }
+
+
+            .swiper.mySwiper {
+                border: 3px solid aqua;
+                width: 70%;
+                margin-right: 0;
+
+                .swiper-wrapper {
+                    width: 100%;
+
+                    .swiper-slide {
+                        width: 100%;
+                        text-align: center;
+                        margin: auto;
+
+                        .side2title {
+                            width: 70%;
+
+                            img {
+                                width: 30%;
+                            }
+                        }
+
+                        .side2img {
+                            width: 70%;
+
+                            img {
+                                width: 30%;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 25px;
+                            font-family: 'Noto Sans KR', sans-serif;
+                            font-weight: 900;
+                            padding-bottom: 10px;
+                        }
+
+                        .side2text {
+                            font-size: 15px;
+                            font-family: 'Noto Sans KR', sans-serif;
+                            font-weight: 700;
+                            padding: 16px 0;
+                        }
+                    }
+                }
+
+                .swiper-pagination {}
+
+                &:hover {
+                    cursor: url(../img/swipe-cursor.svg) 15 15, progress;
+                }
+            }
+
+
+        }
+    }
+
+    .third {
+        padding: 0 !important;
+        background-color: #fcf5db;
+        border-bottom: 1px solid;
+        width: 100%;
+
+        .thirdup {
+            padding: 0 0 0 60px !important;
+            margin-right: 0 !important;
+            display: flex;
+
+            .title3box {
+                width: 30%;
+                padding: 40px 10px 20px !important;
+                border-right: 1px solid;
+                position: relative;
+
+                .title3 {
+                    font-family: 'mang4', 'Noto Sans KR', sans-serif;
+                    font-size: 25px;
+                    font-weight: 900;
+                    width: 100%;
+                }
+
+                p {
+                    text-align: left;
+                    margin-top: 30px;
+                    padding-bottom: 40px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                }
+
+                span {
+
+                    img {
+                        max-width: 100%;
+                        padding-right: 60px;
+                        position: absolute;
+                        height: auto;
+                        bottom: 0;
+                        padding-bottom: 20px;
+                    }
+                }
+
+            }
+
+            .List3box {
+                width: 70%;
+                right: 0;
+
+                img {
+                    width: 100%;
+                    height: 45%;
+                    object-fit: cover;
+                }
+
+                .List3 {
+                    text-align: center;
+                    border-bottom: 1px solid;
+                    padding: 40px;
+                    font-family: 'mang2', 'Noto Sans KR', sans-serif;
+                    font-weight: 600;
+                    font-size: 17px;
+                }
+
+                .detail {
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-top: 1px solid;
+
+                    .detailtext {
+                        width: 50%;
+                        padding: 40px;
+                        //border-bottom: 1px solid;
+                        border-right: 1px solid;
+                        text-align: center;
+
+                        h2 {
+                            font-family: 'mang2', 'Noto Sans KR', sans-serif;
+                            font-weight: 600;
+                            font-size: 17px;
+                        }
+
+                        p {
+                            font-family: 'Noto Sans KR', sans-serif;
+                            font-weight: 400;
+                            font-size: 17px;
+                        }
+                    }
+
+
+                }
+
+
+            }
+        }
+
+        .more3 {
+            position: absolute;
+            right: 0;
+            background-color: #fcf5db;
+            border: 1px solid #000;
+            height: 45px;
+
+            a {
+                font-size: 22px;
+                font-weight: 600 !important;
+                padding-right: 2em;
+                padding-left: 0.7em;
+                font-family: 'mang3';
+
+            }
+        }
+    }
+
+    .fourth {
+        width: 100%;
+
+        padding: 40px 0 !important;
+        border-bottom: 1px solid;
+        overflow-x: hidden;
+
+        .fourthup {
+            padding: 0 60px 20px !important;
+            width: 100% !important;
+            max-width: inherit;
+            display: flex;
+
+            .title4hbox {
+                width: 30%;
+
+                .title4 {
+                    font-family: 'mang4', 'Noto Sans KR', sans-serif;
+                    font-size: 25px;
+                    font-weight: 900;
+                    width: 100%;
+                }
+
+                p {
+                    width: 80%;
+                    text-align: left;
+                    margin-top: 30px;
+                    padding-bottom: 40px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                }
+            }
+
+            .List4box {
+                width: 70%;
+                position: relative;
+                margin-top: 10%;
+
+                .ja {
+                    width: 100%;
+
+                    //position: absolute;
+                    a {
+                        img {
+                            aspect-ratio: 1;
+                            object-fit: cover;
+                            width: 40%;
+                        }
+                    }
+
+                    h2 {
+                        padding: 3px 0;
+                        font-family: 'mang4', 'Noto Sans KR', sans-serif;
+                        font-size: 18px;
+                        font-weight: 900;
+                        width: 100%;
+                    }
+
+                    span {
+                        text-align: left;
+                        margin-top: 30px;
+                        padding-bottom: 40px;
+                        font-weight: 400;
+                        font-size: 17px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                    }
+                }
+
+                .more4 {
+                    position: absolute;
+                    right: 10px;
+                    top: -55px;
+
+                    a {
+                        font-size: 22px;
+                        font-weight: 600 !important;
+                        padding-right: 2em;
+                        padding-left: 0.7em;
+                        font-family: 'mang3';
+                    }
+                }
+            }
+        }
+    }
+
+    .Fifth {
+        width: 100%;
+        padding: 40px 0 !important;
+        background-color: #e5f0f3;
+        border-bottom: 1px solid;
+
+        .Fifthup {
+            padding: 0 60px 20px !important;
+            width: 100% !important;
+            max-width: inherit;
+            display: flex;
+
+            .title5 {
+                width: 30%;
+                font-family: 'mang4', 'Noto Sans KR', sans-serif;
+                font-size: 25px;
+                font-weight: 900;
+            }
+
+            .List5 {
+                width: 70%;
+
+                .content {
+                    padding: 20px 0 15px;
+                    border: 0;
+                    border-top: 1px solid;
+                    background-color: transparent !important;
+
+                    h5 {
+                        font-family: 'mang4', 'Noto Sans KR', sans-serif;
+                        font-size: 25px;
+                        font-weight: 900;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        img {
+                            display: block;
+                        }
+                    }
+
+                    div {
+                        font-size: 15px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        padding: 15px 15px 0 0;
+                        max-width: 810px;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .sixth {
+        padding: 40px 0 !important;
+        background-color: #d5fcdf;
+        //z-index: 99;
+
+        .sixthup {
+            padding: 0 60px 20px !important;
+            width: 100% !important;
+            max-width: inherit;
+            position: relative;
+
+            .sixthbox {
+                width: 60%;
+
+                .title6 {
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 30px;
+                    font-weight: 500;
+                    padding-bottom: 45px;
+                }
+
+                .List6box {
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+
+                    .emailaddress {
+                        float: left;
+                        padding-right: 5px;
+
+                        div {}
+
+                        input {
+                            padding: 15px 14px;
+                            border: solid 2px #1f1e1d;
+                            font-size: 20px;
+                            font-weight: 700;
+                            border-radius: 0 !important;
+                            padding-bottom: 5px;
+                        }
+                    }
+
+                    .name {
+                        padding-right: 5px;
+
+                        div {}
+
+                        input {
+                            padding: 15px 14px;
+                            border: solid 2px #1f1e1d;
+                            font-size: 20px;
+                            font-weight: 700;
+                            border-radius: 0 !important;
+                            padding-bottom: 5px;
+                        }
+                    }
+
+                    .checkbox {
+                        display: flex;
+
+
+                        input {}
+
+                        .green {
+
+                            color: #00b453;
+                        }
+
+                        .black {}
+                    }
+
+                    .save {
+                        padding-top: 5px;
+
+                        button {
+                            background-color: #1f1e1d;
+                            font-size: 20px;
+                            font-weight: 700;
+                            color: #d5fcdf !important;
+                            width: 100%;
+                            height: 52px;
+                            line-height: 56px;
+                        }
+                    }
+                }
+            }
+
+            .sixthimg {
+                width: 40%;
+
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    right: 8%;
+                    width: 100%;
+                    max-width: 180px;
+                }
+            }
+        }
+    }
+
+    .seventh {
+        padding: 40px 0px !important;
+        background-color: #1f1e1d;
+        color: white;
+
+
+        .seventhup {
+            padding: 0 60px 20px !important;
+            width: 100% !important;
+            max-width: inherit;
+            display: flex;
+
+            .seventhbox {
+                width: 30%;
+            }
+
+            .seventhtext {
+                width: 60%;
+
+                .text7 {}
+
+                .more7 {
+                    a {
+                        color: white;
+                    }
+
+                    img {}
+                }
+            }
+        }
+    }
+
+}
