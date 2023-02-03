@@ -3,6 +3,11 @@ header {
   font-size: 25px;
   font-weight: 900;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
 }
 header .top {
   text-align: center;
@@ -24,6 +29,44 @@ header .topbox span a {
 }
 header .topbox .eng {
   padding: 5px 20px 0px;
+}
+
+.show {
+  visibility: visible;
+}
+.show .topbox span {
+  transform: translateY(0%);
+}
+
+.active {
+  transform: translateY(0%);
+  padding-top: 0px;
+  background: white;
+  width: 100%;
+  border-bottom: 2px solid black;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.active .top {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.active .topbox {
+  transform: translate(0px, -130px);
+  left: 0%;
+}
+.active .topbox .book {
+  background-color: blue;
+  width: 10%;
+  height: 70px;
+  color: white;
+}
+.active .topbox span {
+  transform: translateY(200%);
+}
+.active .topbox span a {
+  display: none;
 }
 
 footer {
