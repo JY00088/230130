@@ -25,13 +25,15 @@ function head() {
     if (pos.y < 10) {
       elHeader.classList.remove('active');
       elHeader.classList.add('show');
-      elSp.classList.remove('active');
-      elSp.classList.add('show');
+      elSp.classList.remove('show');
+      elSp.classList.add('active');
 
       console.log('active');
     } else {
       elHeader.classList.add('active');
       elHeader.classList.remove('show');
+      elSp.classList.remove('active');
+      elSp.classList.add('show');
     }
   });
 }

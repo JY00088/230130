@@ -1,3 +1,6 @@
+@import "./reset.css";
+@import "./variable.scss";
+
 header {
     font-family: 'mang4', 'Noto Sans KR', sans-serif;
     font-size: 25px;
@@ -7,12 +10,12 @@ header {
     top: 0;
     left: 0;
     right: 0;
-
+    transform: translate3d(0, 0, 0);
     height: 75px;
 
     .top {
         text-align: center;
-        padding: 30px 0 25px;
+        //padding: 30px 0 25px;
 
         .logoimg {
             img {
@@ -32,16 +35,27 @@ header {
         .book {
             padding: 5px 20px 0px;
         }
+        .book:hover{
+            color: #00b450;
+            cursor: url(../img/cursor.svg) 15 15, progress;
+            }
 
-        span {
+        .mi {
             a {
 
                 padding: 5px 12.5px 0px;
+            } 
+            a:hover{
+            color: #00b450;
             }
         }
+       
 
         .eng {
             padding: 5px 20px 0px;
+        }
+        .eng:hover{
+            color: #00b450;
         }
     }
 }
@@ -49,20 +63,22 @@ header {
 
 .show {
     visibility: visible;
-
+    transform: translate3d(0, 0, 0);
     .topbox {
-        span {
+        .book{}
+        .mi {
             transform: translateY(0%);
+            border-bottom:none;
         }
     }
 }
 
 .active {
-    //opacity: 1;
+    transform: translate3d(0, 0, 0);
     transform: translateY(0%);
     padding-top: 0px;
     background: white;
-    width: 100%;
+    //width: 100%;
     border-bottom: 2px solid black;
     overflow: hidden;
     transition: .2s;
@@ -71,26 +87,40 @@ header {
         width: 80%;
         margin: 0 auto;
         overflow: hidden;
+        background: white;
+
+        img{    
+        transform: translateX(10px);
+        }
     }
 
     .topbox {
-        transform: translate(0px, -130px);
+        
         left: 0%;
 
         .book {
+            transform: translate(0px, -140px);
             background-color: blue;
-            width: 10%;
-            height: 70px;
+            width: 145px;
+            height: 83px;
             color: white;
+            display: flex;
+            align-items: center;
+
+            span{
+
+            }
         }
 
-        span {
-            transform: translateY(200%);
+        .mi {
+            display: none;
 
             a {
-
-                display: none;
+                transform: translateY(100%);
             }
+        }
+        .eng{
+            transform: translate(0px, -115px);
         }
     }
 }

@@ -101,7 +101,7 @@ elOne1.addEventListener('click', function () {
 // });
 
 var swiper2 = new Swiper('.mySwiper2', {
-  slidesPerView: 2,
+  slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
   observer: true,
