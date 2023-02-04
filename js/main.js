@@ -41,10 +41,13 @@ function showImage() {
   setTimeout('showImage()', 1000);
 }
 
+var bullet = ['Sinchon', 'Dongdaemun', 'Sinseol', 'Soongin'];
 var swiper = new Swiper('.mySwiper', {
   slidesPerView: 2,
   spaceBetween: 30,
   loop: true,
+  observer: true,
+  observeParents: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -61,6 +64,11 @@ var swiper = new Swiper('.mySwiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  on: {
+    slideChange: function (e) {
+      console.log(e.realIndex);
+    },
   },
 });
 
@@ -79,3 +87,45 @@ elOne1.addEventListener('click', function () {
   }
   // elOne.classList.toggle('on')
 });
+
+// var swiper2 = new Swiper('.mySwiper2', {
+//   slidesPerView: 3,
+//   freeMode: true,
+//   spaceBetween: 30,
+//   centeredSlides: true,
+//   autoplay: {
+//     delay: 2500,
+//   },
+//   observer: true,
+//   observeParents: true,
+// });
+
+var swiper2 = new Swiper('.mySwiper2', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  observer: true,
+  observeParents: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+
+$('.que').click(function () {
+  $(this).next('.anw').stop().slideToggle(300);
+  $(this).toggleClass('on').siblings().removeClass('on');
+  $(this).next('.anw').siblings('.anw').slideUp(300); // 1개씩 펼치기
+});
+
+const elFaq = document.querySelectorAll('.que');
+const elAnw = document.querySelectorAll('.anw');
+
+/* elFaq.addEventListener('click', function () {
+  let ifToggle = elFaq.classList.toggle('on');
+  if (ifToggle == false) {
+  } else {
+    elAnw.style = 'display:none';
+  }
+  elFaq.classList.toggle('on');
+}); */
