@@ -35,10 +35,11 @@ header {
         .book {
             padding: 5px 20px 0px;
         }
-        .book:hover{
+
+        .book:hover {
             color: #00b450;
             cursor: url(../img/cursor.svg) 15 15, progress;
-            }
+        }
 
         .book:hover {
             color: #00b450;
@@ -255,13 +256,22 @@ footer {
             .mi {
                 display: none;
 
-            a {
+                a {
 
+                    display: none;
+                }
+
+            }
+
+            .eng {
                 display: none;
+            }
+
+            .home {
+                display: block;
             }
         }
     }
-}
 
     footer {
         font-family: 'Noto Sans KR', sans-serif;

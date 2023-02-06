@@ -190,6 +190,12 @@ footer .allunder .underin .underbetween .footertext03 a {
   header .topbox .mi a {
     display: none;
   }
+  header .topbox .eng {
+    display: none;
+  }
+  header .topbox .home {
+    display: block;
+  }
   footer {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 0.875rem;
