@@ -1,8 +1,8 @@
 $('body').prepend('<header>');
 $('body').append('<footer>');
 
-$('header').load('../page/inc.html header', head);
-$('footer').load('../page/inc.html footer');
+$('header').load('./page/inc.html header', head);
+$('footer').load('./page/inc.html footer');
 
 function head() {
   let pos = { y: 0, y2: 0, state: 0 };
