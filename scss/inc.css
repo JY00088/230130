@@ -31,6 +31,10 @@ header .topbox .book:hover {
   color: #00b450;
   cursor: url(../img/cursor.svg) 15 15, progress;
 }
+header .topbox .book:hover {
+  color: #00b450;
+  cursor: url(../img/cursor.svg) 15 15, progress;
+}
 header .topbox .mi a {
   padding: 5px 12.5px 0px;
 }
@@ -184,56 +188,7 @@ footer .allunder .underin .underbetween .footertext03 a {
     display: none;
   }
   header .topbox .mi a {
-    padding: 5px 12.5px 0px;
-  }
-  header .topbox .mi a:hover {
-    color: #00b450;
-  }
-  header .topbox .eng {
     display: none;
-    padding: 5px 20px 0px;
-  }
-  header .topbox .eng:hover {
-    color: #00b450;
-  }
-  header .topbox .home {
-    display: block;
-    font-size: 20px;
-    transform: translate(730px, 13px);
-  }
-  header .topbox .menuBox .colortext li {
-    color: white;
-  }
-  .show {
-    visibility: visible;
-    transform: translate3d(0, 0, 0);
-  }
-  .show .topbox .mi {
-    transform: translateY(0%);
-    border-bottom: none;
-  }
-  .active {
-    transform: translate3d(0, 0, 0);
-    transform: translateY(0%);
-    padding-top: 0px;
-    background: white;
-    border-bottom: 2px solid black;
-    overflow: hidden;
-    transition: 0.2s;
-  }
-  .active .topbox .book {
-    background: transparent;
-    color: black;
-    font-size: 20px;
-    transform: translate(0px, -27px);
-    display: flex;
-    align-items: center;
-  }
-  .active .topbox .mi {
-    display: none;
-  }
-  .active .topbox .mi a {
-    transform: translateY(100%);
   }
   footer {
     font-family: "Noto Sans KR", sans-serif;

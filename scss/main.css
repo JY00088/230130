@@ -305,6 +305,12 @@ main .Second .Secondup .listride .swiper.mySwiper .swiper-wrapper .swiper-slide 
 main .Second .Secondup .listride .swiper.mySwiper:hover {
   cursor: url(../img/swipe-cursor.svg) 15 15, progress;
 }
+main .Second .Secondup .listride .swiper.mySwiper:hover {
+  cursor: url(../img/swipe-cursor.svg) 15 15, progress;
+}
+main .Second .Secondup .listride .swiper.mySwiper:hover {
+  cursor: url(../img/swipe-cursor.svg) 15 15, progress;
+}
 main .Second .Secondup .listride .swiper-pagination {
   width: 15%;
   position: relative;
