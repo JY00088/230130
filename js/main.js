@@ -46,13 +46,13 @@ var swiper = new Swiper('.mySwiper', {
   breakpoints: {
     // 화면의 넓이가 980px 이상일 때
     980: {
-      slidesPerView: 1
+      slidesPerView: 1,
     },
     // 화면의 넓이가 1024px 이상일 때
     1024: {
       slidesPerView: 2,
-      spaceBetween: 30
-    }
+      spaceBetween: 30,
+    },
   },
   spaceBetween: 30,
   loop: true,
@@ -111,8 +111,22 @@ elOne1.addEventListener('click', function () {
 // });
 
 var swiper2 = new Swiper('.mySwiper2', {
-  slidesPerView: 3,
-  spaceBetween: 30,
+  breakpoints: {
+    // 화면의 넓이가 980px 이상일 때
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 100,
+    },
+    980: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    // 화면의 넓이가 1024px 이상일 때
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
   loop: true,
   observer: true,
   observeParents: true,
@@ -139,5 +153,3 @@ const elAnw = document.querySelectorAll('.anw');
   }
   elFaq.classList.toggle('on');
 }); */
-
-
