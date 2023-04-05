@@ -43,7 +43,17 @@ function showImage() {
 
 var bullet = ['Sinchon', 'Dongdaemun', 'Sinseol', 'Soongin'];
 var swiper = new Swiper('.mySwiper', {
-  slidesPerView: 2,
+  breakpoints: {
+    // 화면의 넓이가 980px 이상일 때
+    980: {
+      slidesPerView: 1,
+    },
+    // 화면의 넓이가 1024px 이상일 때
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
   spaceBetween: 30,
   loop: true,
   observer: true,
@@ -101,8 +111,22 @@ elOne1.addEventListener('click', function () {
 // });
 
 var swiper2 = new Swiper('.mySwiper2', {
-  slidesPerView: 3,
-  spaceBetween: 30,
+  breakpoints: {
+    // 화면의 넓이가 980px 이상일 때
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 100,
+    },
+    980: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    // 화면의 넓이가 1024px 이상일 때
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
   loop: true,
   observer: true,
   observeParents: true,
